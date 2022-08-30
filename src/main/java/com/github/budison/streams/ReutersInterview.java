@@ -8,7 +8,7 @@ class ReutersInterview {
 
     public static void main(String[] args) {
 
-        var data = Arrays.asList("f1", "f5", "f6", "f4", "f4");
+        var data = Arrays.asList("f10", "f15", "f2", "f4", "f4");
 
         List<String> ret = data
                 .stream()
