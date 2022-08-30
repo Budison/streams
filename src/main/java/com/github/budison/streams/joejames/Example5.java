@@ -1,4 +1,4 @@
-package com.github.budison.streams;
+package com.github.budison.streams.joejames;
 
 import java.util.Arrays;
 

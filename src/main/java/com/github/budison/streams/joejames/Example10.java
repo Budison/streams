@@ -1,20 +1,21 @@
-package com.github.budison.streams;
+package com.github.budison.streams.joejames;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-class Example11 {
+class Example10 {
 
     public static void main(String[] args) throws IOException {
 
-        // 11. Stream rows from CSV file, parse data from rows
+        // 10. Stream rows from CSV file and count
         Stream<String> rows = Files.lines(Paths.get("src/main/resources/data.txt"));
-        rows.map(x -> x.split(","))
+        int rowCount = (int) rows
+                .map(x -> x.split(","))
                 .filter(x -> x.length == 3)
-                .filter(x -> Integer.parseInt(x[1]) > 15)
-                .forEach(x -> System.out.println(x[0] + " " + x[1] + " " + x[2]));
+                .count();
+        System.out.println(rowCount + " row(s)");
         rows.close();
     }
 }
