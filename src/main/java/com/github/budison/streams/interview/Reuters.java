@@ -1,10 +1,10 @@
-package com.github.budison.streams;
+package com.github.budison.streams.interview;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-class ReutersInterview {
+class Reuters {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,5 @@ class ReutersInterview {
 
         System.out.println(data);
         System.out.println(ret);
-
     }
 }
