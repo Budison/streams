@@ -7,8 +7,11 @@ class Example7 {
 
     public static void main(String[] args) {
 
-        // 7. Stream from List, filter and print
-        List<String> people = Arrays.asList("Al", "Ankit", "Kushal", "Brent", "Sarika", "Amanda", "Hans", "Shivika", "Sarah");
+        // Stream from List, filter and print
+        List<String> people = Arrays.asList(
+                "Al", "Ankit", "Kushal", "Brent", "Sarika", "Amanda", "Hans", "Shivika", "Sarah"
+        );
+
         people.stream()
                 .map(String::toLowerCase)
                 .filter(x -> x.startsWith("a"))

@@ -9,11 +9,10 @@ class Example9 {
 
     public static void main(String[] args) throws IOException {
 
-        // 9. Stream rows from text file and save to List
+        // Stream rows from text file and save to List
         List<String> bands = Files.lines(Paths.get("src/main/resources/bands.txt"))
                 .filter(x -> x.contains("jit"))
-//              .collect(Collectors.toList());
-                .toList();
+                .toList();  // short for .collect(Collectors.toList())
         bands.forEach(System.out::println);
     }
 }

@@ -8,15 +8,16 @@ class Reuters {
 
     public static void main(String[] args) {
 
-        var data = Arrays.asList("f10", "f15", "f2", "f4", "f4");
+        List<String> data = Arrays.asList("Ann", "Paul", "Bob", "Mark", "John", "Frank", "Paul");
 
+        // Remove duplicates and sort in reversed alphabetical order
         List<String> ret = data
                 .stream()
                 .distinct()
                 .sorted(Comparator.reverseOrder())
                 .toList();
 
-        System.out.println(data);
-        System.out.println(ret);
+        System.out.println("Before: " + data);
+        System.out.println("After:  " + ret);
     }
 }

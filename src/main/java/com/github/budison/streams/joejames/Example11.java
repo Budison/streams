@@ -9,7 +9,7 @@ class Example11 {
 
     public static void main(String[] args) throws IOException {
 
-        // 11. Stream rows from CSV file, parse data from rows
+        // Stream rows from CSV file, parse data from rows
         Stream<String> rows = Files.lines(Paths.get("src/main/resources/data.txt"));
         rows.map(x -> x.split(","))
                 .filter(x -> x.length == 3)
