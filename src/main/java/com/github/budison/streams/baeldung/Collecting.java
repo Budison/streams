@@ -1,7 +1,6 @@
 package com.github.budison.streams.baeldung;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class Collecting {
@@ -10,8 +9,7 @@ class Collecting {
 
         Stream<String> stream = Stream.of("go", "walk", "run", "speed", "crawl");
 
-        List<String> list = stream.map(String::toUpperCase).toList();
-//      List<String> list = stream.map(s -> s.toUpperCase()).collect(Collectors.toList());
+        List<String> list = stream.map(String::toUpperCase).toList();   // .map(s -> s.toUpperCase())
 
         System.out.println(list);
     }

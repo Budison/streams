@@ -1,3 +1,5 @@
 # Java Streams
 
-This project was created on 2022-08-29 from a template.
+## Links
+* Baeldung: https://www.baeldung.com/java-8-streams
+* Joe James: https://www.youtube.com/watch?v=t1-YZ6bF-g0
