@@ -11,7 +11,7 @@ class Example12 {
 
     public static void main(String[] args) throws IOException {
 
-        // 12. Stream rows from CSV file, store fields in HashMap
+        // Stream rows from CSV file, store fields in HashMap
         Stream<String> rows = Files.lines(Paths.get("src/main/resources/data.txt"));
 
         Map<String, Integer> map;
